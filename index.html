@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEH SENJA</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- NAVBAR ATAS -->
+    <nav class="navbar">
+    <a href="#" class="navbar-logo">teh<span>SENJA</span></a>
+
     
-</body>
+    <div class="navbar-nav">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">MENU</a>
+        <a href="#">CONTACT</a>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="teh-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Nikmatnya Secangkir <span>TEH</span></h1>
+            <p>Rasakan Keajaiban Setiap Seduhan: Teh Pilihan Terbaik Hanya di Sini!"</p>
+            <a href="#" class="cta">Beli Sekarang</a>
+        </main>
+    </section>
+
+    <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+        <div class="row">
+          <div class="about-img">
+            <img src="IMAGE/miti-DFtvglCPWjY-unsplash.jpg" alt="tentang kami">
+          </div>
+          <div class="content">
+            <h3>Kenapa Memilih Teh Kami?</h3>
+            <p>Kami menawarkan teh berkualitas tinggi yang dipetik secara selektif, memberikan pengalaman teh terbaik dengan cita rasa yang kaya dan aroma yang memikat</p>
+            <p>Dapatkan keunikan rasa dengan koleksi eksklusif kami yang mencakup campuran dan kombinasi teh yang inovatif, menciptakan pengalaman minum teh yang tak terlupakan</p>
+          </div>
+        </div>
+    </section>
+
+        <section id="menu" class="menu">
+          <h2><span>Menu</span> Kami</h2>
+          <p>Nikmati penawaran eksklusif, paket khusus, dan diskon reguler untuk memberikan nilai tambah kepada pelanggan setia kami</p>
+
+          <div class="row">
+            <div class="menu-card">
+              <img src="IMAGE/imresizer-1700135440482.jpg" alt="tea" class="menu-card-img">
+              <h3 class="menu-card-title">- tea -</h3>
+              <p class="menu-card-price">IDR 15K</p>
+            </div>
+            <div class="menu-card">
+              <img src="IMAGE/imresizer-1700135440482.jpg" alt="tea" class="menu-card-img">
+              <h3 class="menu-card-title">- tea -</h3>
+              <p class="menu-card-price">IDR 15K</p>
+            </div>
+            <div class="menu-card">
+              <img src="IMAGE/imresizer-1700135440482.jpg" alt="tea" class="menu-card-img">
+              <h3 class="menu-card-title">- tea -</h3>
+              <p class="menu-card-price">IDR 15K</p>
+            </div>
+            <div class="menu-card">
+              <img src="IMAGE/imresizer-1700135440482.jpg" alt="tea" class="menu-card-img">
+              <h3 class="menu-card-title">- tea -</h3>
+              <p class="menu-card-price">IDR 15K</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <h2><span>Kontak</span> Kami</h2>
+          <p>Nikmati penawaran eksklusif, paket khusus, dan diskon reguler untuk memberikan nilai tambah kepada pelanggan setia kami</p>
+          <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15937.875753281973!2d104.76920508715823!3d-2.9672996999999977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b77fd76072b6f%3A0x9d5b1d91e1507509!2sCheesetea%20milenial!5e0!3m2!1sid!2sid!4v1700146560108!5m2!1sid!2sid"" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+            <form action="">
+
+              <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="Nama">
+              </div>
+
+              <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="Email">
+              </div>
+
+              <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="Nomor hp">
+              </div>
+
+              <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+          </div>
+
+        </section>
+
+        <footer>
+          <div class="socials">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+          </div>
+
+          <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">Tenatng Kami</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Kontak</a>
+          </div>
+
+          <div class="credit">
+            <p>Created By <a>Thoriq</a>. | &copy; 2023</p>
+          </div>
+        </footer>
+
+    <!-- NAVBAR BAWAH -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="index.js"></script>
+
+  </body>
 </html>
